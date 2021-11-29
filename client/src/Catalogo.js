@@ -1,10 +1,10 @@
+const pelis = ['1', 'Batman', 'Spiderman', 'otra peli'];
 
 const Catalogo = () => {
   return (
+
     <div>
-      <h2> Peli 1 </h2>
-      <h2> Peli 2 </h2>
-      <h2> Peli 3 </h2>
+      {pelis.map(peli => <h2>{peli}</h2>)}
     </div>
   );
 }
