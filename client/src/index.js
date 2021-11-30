@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <Router>
@@ -12,5 +12,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById('root')
 );
-
-reportWebVitals();

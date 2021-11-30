@@ -7,7 +7,7 @@ const Header = ({ title }) => {
       <h1>PapuPelis</h1>
       <div>
         <Link to="/">Inicio</Link>
-        <Link to="/Catalogo">Peliculas</Link>
+        <Link to="/Catalogo"> Catalogo</Link>
      </div>
    </nav>
   )
