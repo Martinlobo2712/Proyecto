@@ -7,6 +7,6 @@ const PeliculaSchema = new mongoose.Schema({
   dias: [String]
 });
 
-const Pelicula = mongoose.model('Pelicula', PeliculaSchema);
+const Pelicula = mongoose.model('pelicula', PeliculaSchema);
 
 module.exports = Pelicula;

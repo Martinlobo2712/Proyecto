@@ -29,6 +29,8 @@ app.use((err, req, res, next) => {
   res.json({ error: err.message });
 });
 
+app.use('/pelicula', router);
+
 mongoose
   .connect(db, { useNewUrlParser: true })
   .then(() => {
@@ -36,7 +38,6 @@ mongoose
   })
 .catch(err => console.error(`Connection error ${err}`));
 
-app.use('/pelicula', router);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`)

@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const Pelicula = require('./models/Pelicula');
 
-const db = 'mongodb://localhost/proyecto';
+const db = 'mongodb+srv://MartinLobo:proyecto@cluster0.g2wam.mongodb.net/Proyecto?retryWrites=true&w=majority';
 
-const Pelicula = [
+const pelicula = [
   {
     id: 1,
     name: 'Batman',
@@ -24,8 +24,8 @@ const Pelicula = [
   },
 ];
 
-mongoose.set('useUnifiedTopology', true);
-mongoose.set('useFindAndModify', false);
+// mongoose.set('useUnifiedTopology', true);
+// mongoose.set('useFindAndModify', false);
 mongoose
   .connect(db, { useNewUrlParser: true })
   .then(() => {
