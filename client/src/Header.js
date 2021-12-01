@@ -3,13 +3,28 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 const Header = ({ title }) => {
   return(
-    <nav>
-      <h1>PapuPelis</h1>
-      <div>
-        <Link to="/">Inicio</Link>
-        <Link to="/Catalogo"> Catalogo</Link>
-     </div>
-   </nav>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <Link class="navbar-brand" to="/">PapuPelis</Link>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+           <li class="nav-item">
+             <Link class="nav-link active" aria-current="page" to="/">Inicio</Link>
+           </li>
+           <li class="nav-item">
+             <Link class="nav-link active" aria-current="page" to="/Catalogo">Catalogo</Link>
+           </li>
+        </ul>
+        </div>
+        </div>
+      </nav>
+
+    </div>
+
   )
 }
 
