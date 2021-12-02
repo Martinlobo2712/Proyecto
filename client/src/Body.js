@@ -1,14 +1,18 @@
-import {useState } from 'react';
 import Inicio from './Inicio';
 import Catalogo from './Catalogo';
 import {Routes, Route} from "react-router-dom";
 import Butacas from './Butacas';
+import Pelicula from './Pelicula';
 import Covid from './Covid';
-const Body = () => {
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 
+const Body = () => {
   const [horarioElegido, setHorarioElegido] = useState('');
   const [peliculaElegida, setPeliculaElegida] = useState('');
   const [fechaElegida, setFechaElegida] = useState('');
+  const [butacasElegidas, setButacasElegidas] = useState('');
+
 
   return (
     <Routes>
@@ -27,6 +31,7 @@ const Body = () => {
        horarioElegido={horarioElegido}
        peliculaElegida={peliculaElegida}
        fechaElegida={fechaElegida}
+       butacasElegidas={butacasElegidas}
        />}
      />
      <Route path="/Covid" element={<Covid />} />

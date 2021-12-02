@@ -1,5 +1,6 @@
 import React from 'react';
 import CssCovid from './Covid.css';
+
 const Covid = () => {
   return(
     <div class="bg-dark">

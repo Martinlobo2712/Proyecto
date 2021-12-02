@@ -5,7 +5,6 @@ import Css from './catalogo.css'
 
 const Catalogo = props  => {
   const [peliculas, setPeliculas] = useState([]);
-
   const { setPeliculaElegida, setHorarioElegido, setFechaElegida } = props;
 
   useEffect(() => {
@@ -26,6 +25,7 @@ const Catalogo = props  => {
         name={pelicula.name}
         horarios={pelicula.horarios}
         dia={pelicula.dias}
+        butacas={pelicula.butacas}
         setPeliculaElegida={setPeliculaElegida}
         setHorarioElegido={setHorarioElegido}
         setFechaElegida={setFechaElegida}
