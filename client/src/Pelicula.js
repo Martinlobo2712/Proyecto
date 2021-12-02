@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {useNavigate} from "react-router-dom";
+import CssPelicula from './Pelicula.css'
 
 
 const Pelicula = props => {
@@ -26,7 +27,9 @@ const Pelicula = props => {
 
  {
   return (
-    <div>
+    <div id="cartas" class="bg-dark">
+    <br/>
+    <div class="card">
       <h1 className="">{name}</h1>
       <button onClick={() => setHidden(false)}> Ver </button>
       <div id={id} hidden={hidden}>
@@ -57,6 +60,8 @@ const Pelicula = props => {
           <button type="submit"> Comprar </button>
         </form>
       </div>
+    </div>
+    <br/>
     </div>
   );
 

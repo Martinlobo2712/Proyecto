@@ -111,6 +111,9 @@ const Covid = () => {
 <h3 class="bg-light" >Si el grupo familiar es mayor se puede hacer en varias operaciones y se juntan las burbujas (max 6 personas).
 Higiene de manos.
 </h3>
+<br/>
+<br/>
+
 <h5>
 <ul>
   <li>Higiene de manos.</li>

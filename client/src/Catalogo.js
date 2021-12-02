@@ -17,8 +17,8 @@ const Catalogo = props  => {
   }, []);
 
   return (
-
-    <div>
+    <div class="bg-dark">
+    <div id="catalogo">
     {peliculas.map(pelicula => (
       <Pelicula
         id={pelicula.id}
@@ -32,6 +32,7 @@ const Catalogo = props  => {
       />
 
     ))}
+    </div>
     </div>
   );
 }
