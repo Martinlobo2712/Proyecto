@@ -1,10 +1,11 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import CssHeader from './Header.css'
 
 const Header = ({ title }) => {
   return(
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav id="nav"class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <Link class="navbar-brand" to="/">PapuPelis</Link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,6 +18,9 @@ const Header = ({ title }) => {
            </li>
            <li class="nav-item">
              <Link class="nav-link active" aria-current="page" to="/Catalogo">Catalogo</Link>
+           </li>
+           <li class="nav-item">
+             <Link class="nav-link active" aria-current="page" to="/Covid">Covid-19</Link>
            </li>
         </ul>
         </div>

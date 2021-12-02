@@ -3,7 +3,7 @@ import Inicio from './Inicio';
 import Catalogo from './Catalogo';
 import {Routes, Route} from "react-router-dom";
 import Butacas from './Butacas';
-
+import Covid from './Covid';
 const Body = () => {
 
   const [horarioElegido, setHorarioElegido] = useState('');
@@ -26,9 +26,10 @@ const Body = () => {
      element={<Butacas
        horarioElegido={horarioElegido}
        peliculaElegida={peliculaElegida}
-       setFechaElegida={setFechaElegida}
+       fechaElegida={fechaElegida}
        />}
      />
+     <Route path="/Covid" element={<Covid />} />
    </Routes>
   );
 }

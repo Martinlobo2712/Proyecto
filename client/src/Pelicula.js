@@ -1,25 +1,30 @@
 import { useState } from 'react';
-import {BrowserRouter as Router, Switch, Route, Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
 
 const Pelicula = props => {
   const [hidden, setHidden] = useState(true);
   const { name, id, horarios, dia, setPeliculaElegida, setHorarioElegido, setFechaElegida } = props;
-
   const navigate = useNavigate();
 
   const handleSubmit = e => {
     e.preventDefault();
     console.log('form enviado');
     setPeliculaElegida(e.target.children[0].children[0].value);
-    console.log(e.target.children[0].children[0].select.value);
     navigate('/butacas');
   }
 
   const handleChange = e => {
-    console.log(e.target.value);
     setHorarioElegido(e.target.value);
   };
 
+
+  const handleChange2 = e => {
+    setFechaElegida(e.target.value);
+  }
+
+
+ {
   return (
     <div>
       <h1 className="">{name}</h1>
@@ -43,16 +48,20 @@ const Pelicula = props => {
               />
             </div>
           ))}
-          <select>
+          <select value={dia.map.item} onChange={handleChange2}>
+            <option>Selecciona una opcion</option>
             {dia.map(item => (
-                <option value={item}>{item}</option>
+                <option>{item}</option>
             ))}
           </select>
-          <button type="submit" > Comprar </button>
+          <button type="submit"> Comprar </button>
         </form>
       </div>
     </div>
   );
+
+}
+
 };
 
 export default Pelicula;

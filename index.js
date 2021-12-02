@@ -5,8 +5,8 @@ const cors = require('cors');
 const path = require('path');
 
 const port = process.env.PORT        || 4000;
-const db   = process.env.MONGODB_URI || 'mongodb://localhost/proyecto';
-// const db = 'mongodb+srv://MartinLobo:proyecto@cluster0.g2wam.mongodb.net/Proyecto?retryWrites=true&w=majority';
+//const db   = process.env.MONGODB_URI || 'mongodb://localhost/proyecto';
+const db = 'mongodb+srv://MartinLobo:proyecto@cluster0.g2wam.mongodb.net/Proyecto?retryWrites=true&w=majority';
 
 
 mongoose

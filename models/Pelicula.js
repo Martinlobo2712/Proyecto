@@ -4,7 +4,8 @@ const PeliculaSchema = new mongoose.Schema({
   id: Number,
   name: String,
   horarios: [String],
-  dias: [String]
+  dias: [String],
+  butacas: [Number]
 });
 
 const Pelicula = mongoose.model('pelicula', PeliculaSchema);

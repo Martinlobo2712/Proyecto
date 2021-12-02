@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import axios from 'axios';
 import Pelicula from './Pelicula';
+import Css from './catalogo.css'
 
 const Catalogo = props  => {
   const [peliculas, setPeliculas] = useState([]);
@@ -17,6 +17,7 @@ const Catalogo = props  => {
   }, []);
 
   return (
+
     <div>
     {peliculas.map(pelicula => (
       <Pelicula
@@ -29,6 +30,7 @@ const Catalogo = props  => {
         setHorarioElegido={setHorarioElegido}
         setFechaElegida={setFechaElegida}
       />
+
     ))}
     </div>
   );

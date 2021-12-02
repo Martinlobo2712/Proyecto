@@ -1,0 +1,19 @@
+#foot{
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  background-color: #262626;
+}
+
+.github{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+h4{
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+}

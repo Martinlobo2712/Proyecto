@@ -1,0 +1,16 @@
+#COVID{
+  margin: 40px;
+  text-align: center;
+  box-shadow: 0px 10px 10px black;
+}
+
+#exclamation{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+#carouselExampleIndicators{
+  margin: 100px;
+  box-shadow: 0px 10px 10px black;
+}
